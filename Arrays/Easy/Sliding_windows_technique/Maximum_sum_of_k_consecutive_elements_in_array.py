@@ -1,5 +1,8 @@
 # To find the maximum sum of the "K" Consecutive elements in the array
-# Above approach acn be achieved using sliding window technique
+# Above approach can be achieved using sliding window technique.
+
+
+# Note : Assume Array has positive numbers.
 
 def maximum_sum_k_consecutive(k, nums):
     present_window_sum = sum(nums[:k])
