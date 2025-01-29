@@ -46,6 +46,12 @@ def triplets_sum_zero(arr):
 nums = [-4, -1, -1, 0, 1, 2]
 print(triplets_sum_zero(nums))
 
+nums = [0, 1, 1]
+print(triplets_sum_zero(nums))
+
+nums = [0, 0, 0]
+print(triplets_sum_zero(nums))
+
 ########################################################################################################################
 # Time Complexity  : O(n2)
 # Space complexity : O(1)
