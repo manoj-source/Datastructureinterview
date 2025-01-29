@@ -7,9 +7,9 @@
 #             Explanation: The triplet [1, 4, 8] sums up to 13
 def triplet_sum_in_array(arr, target):
     n = len(arr)
-    first_pointer = 1
-    last_pointer = n-1
     for index in range(n-2):
+        first_pointer = index +1
+        last_pointer = n-1
         required_sum = target - arr[index]
         while first_pointer < last_pointer:
             if required_sum == arr[first_pointer] + arr[last_pointer]:
@@ -33,6 +33,10 @@ print(triplet_sum_in_array(arr, target))
 
 arr = [1, 1, 2, 5, 10, 8]
 target = 3
+print(triplet_sum_in_array(arr, target))
+
+arr = [-2, -1, 0, 1, 5, 8, 10]
+target = -3
 print(triplet_sum_in_array(arr, target))
 
 ########################################################################################################################
